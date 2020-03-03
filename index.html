@@ -6,9 +6,33 @@
             body {
                 font-family: "Comic Sans MS", "Times New Roman", sarif;
             }
-            img {
-                width: 360px;
-                height: 360px;
+            .title h1 {
+                float: right;
+                padding-right: 50%;
+                margin: 60px 0 72px 0;
+            }
+            .title img {
+                width: 144px;
+                height: 144px;
+            }
+            .nav {
+                width: 100%;
+            }
+            .nav div {
+                width: 25%;
+                text-align: center;
+            }
+            .AboutMe {
+                float: left;
+            }
+            .Projects {
+                float: left;
+            }
+            .Links {
+                float: right;
+            }
+            .Reminders {
+                float: right;
             }
             h1 {
                 color: crimson;
@@ -19,21 +43,38 @@
         </style>
     </head>
     <body>
-        <img src="cat.jpg" alt="cat">
-        <h1>Will Hammond</h1>
-        <section>
+        <div class="title">
+            <img src="cat.jpg" alt="cat">
+            <h1>Will Hammond</h1>
+        </div>
+        <div class="nav">
+            <div class="AboutMe">
+                <a href="#aboutme">About Me</a>
+            </div>
+            <div class="Projects">
+                <a href="#projects">Projects and Experiences</a>
+            </div>
+            <div class="Links">
+                <a href="#links">Important Links</a>
+            </div>
+            <div class="Reminders">
+                <a href="#reminders">Reminders and Resetting Your Expectations</a>
+            </div>
+        </div>
+        <section id="aboutme">
             <h2>About Me</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem voluptates maxime expedita numquam atque nobis, adipisci, est incidunt rerum ratione debitis. Obcaecati totam, incidunt beatae dolor maiores placeat repellat minima!</p>
         </section>
-        <section>
+        <section id="projects">
             <h2>Projects and Experiences</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, aspernatur eveniet enim odit ipsum quas ut voluptas illo perspiciatis, laudantium quis ad obcaecati corrupti, sapiente delectus accusamus vero provident suscipit!</p>
         </section>
-        <section>
-            <h2>Important links</h2>
+        <section id="links">
+            <h2>Important Links</h2>
             <a href="https://www.github.com/wkhammond">GitHub</a>
+            <a href="http://www.example.com">My favorite site for logging into the UMASS network</a>
         </section>
-        <section>
+        <section id="reminders">
             <h2>Reminders and resetting your expectations (READ CAREFULLY)</h2>
             <p>
                 Hi everyone,
